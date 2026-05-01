@@ -1,152 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Food Mahal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Mahal</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-            margin: 0;
-            text-align: center;
-        }
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#f5f5f5;
+}
 
-        header {
-            background: #e63946;
-            color: white;
-            padding: 15px;
-        }
+header {
+  background:#ff6600;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
 
-        .menu {
-            padding: 20px;
-        }
+.hero img {
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
 
-        .item {
-            background: white;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 10px;
-        }
+.section {
+  padding:20px;
+}
 
-        button {
-            padding: 10px;
-            margin-top: 10px;
-            background: green;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+h2 {
+  color:#ff6600;
+}
 
-        .cart {
-            background: #fff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
+.menu-item {
+  background:white;
+  margin:10px 0;
+  padding:10px;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+}
 
-        input {
-            padding: 10px;
-            width: 80%;
-            margin: 5px;
-        }
+button {
+  background:#ff6600;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  border-radius:5px;
+  cursor:pointer;
+}
 
-        .whatsapp {
-            background: #25D366;
-        }
-    </style>
+.gallery img {
+  width:100%;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+footer {
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
+
 </head>
-
 <body>
 
 <header>
-    <h1>🍽 Food Mahal</h1>
-    <p>Delicious Food Online Order</p>
+  <h1>🍕 Food Mahal</h1>
+  <p>Pizza | Fast Food | Broast | BBQ</p>
 </header>
 
-<div class="menu">
-    <h2>Menu</h2>
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+</div>
 
-    <div class="item">
-        <h3>Burger - Rs 300</h3>
-        <button onclick="addItem('Burger',300)">Add to Cart</button>
-    </div>
+<div class="section">
+  <h2>🔥 Popular Deals</h2>
 
-    <div class="item">
-        <h3>Pizza - Rs 800</h3>
-        <button onclick="addItem('Pizza',800)">Add to Cart</button>
-    </div>
+  <div class="menu-item">
+    <span>Deal 1 - Zinger + Fries + Drink</span>
+    <button onclick="order('Deal 1 - Rs 500')">Rs 500</button>
+  </div>
 
-    <div class="item">
-        <h3>Biryani - Rs 250</h3>
-        <button onclick="addItem('Biryani',250)">Add to Cart</button>
-    </div>
+  <div class="menu-item">
+    <span>Deal 5 - Large Pizza + Wings + Drink</span>
+    <button onclick="order('Deal 5 - Rs 2100')">Rs 2100</button>
+  </div>
 
-    <div class="item">
-        <h3>Karahi - Rs 1200</h3>
-        <button onclick="addItem('Karahi',1200)">Add to Cart</button>
-    </div>
+  <div class="menu-item">
+    <span>Family Deal</span>
+    <button onclick="order('Family Deal - Rs 3500')">Rs 3500</button>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🍗 Chicken Broast</h2>
+
+  <div class="menu-item">
+    <span>Full Broast</span>
+    <button onclick="order('Full Broast - Rs 2099')">Rs 2099</button>
+  </div>
+
+  <div class="menu-item">
+    <span>Half Broast</span>
+    <button onclick="order('Half Broast - Rs 1099')">Rs 1099</button>
+  </div>
+
+  <div class="menu-item">
+    <span>Quarter Broast</span>
+    <button onclick="order('Quarter Broast - Rs 599')">Rs 599</button>
+  </div>
+</div>
+
+<div class="section gallery">
+  <h2>📸 Our Restaurant</h2>
+
+  <!-- Tumhari images yahan -->
+  <img src="YOUR_IMAGE_1">
+  <img src="YOUR_IMAGE_2">
+  <img src="YOUR_IMAGE_3">
 
 </div>
 
-<div class="cart">
-    <h2>Your Order</h2>
-
-    <div id="list"></div>
-
-    <h3>Total: Rs <span id="total">0</span></h3>
-
-    <input type="text" id="name" placeholder="Your Name"><br>
-    <input type="text" id="phone" placeholder="Phone Number"><br>
-    <input type="text" id="address" placeholder="Address"><br>
-
-    <button onclick="placeOrder()">Place Order</button>
-    <br><br>
-    <button class="whatsapp" onclick="sendWhatsApp()">Order on WhatsApp</button>
+<div class="section">
+  <h2>📍 Location</h2>
+  <p>Sahib-e-Lolaak Road, Pir Mahal</p>
 </div>
+
+<footer>
+  <p>📞 0324-2336663</p>
+  <p>⏱ Delivery Time: 25-30 Minutes</p>
+</footer>
 
 <script>
-    let total = 0;
-    let orderList = "";
-
-    function addItem(name, price) {
-        total += price;
-        orderList += name + " (Rs " + price + "), ";
-        document.getElementById("total").innerText = total;
-        document.getElementById("list").innerText = orderList;
-    }
-
-    function placeOrder() {
-        let name = document.getElementById("name").value;
-        let phone = document.getElementById("phone").value;
-        let address = document.getElementById("address").value;
-
-        alert(
-            "Order Placed!\n\nName: " + name +
-            "\nPhone: " + phone +
-            "\nAddress: " + address +
-            "\nItems: " + orderList +
-            "\nTotal: Rs " + total
-        );
-    }
-
-    function sendWhatsApp() {
-        let name = document.getElementById("name").value;
-        let phone = document.getElementById("phone").value;
-        let address = document.getElementById("address").value;
-
-        let msg = "New Order%0A"
-            + "Name: " + name + "%0A"
-            + "Phone: " + phone + "%0A"
-            + "Address: " + address + "%0A"
-            + "Items: " + orderList + "%0A"
-            + "Total: Rs " + total;
-
-        let yourNumber = let yourNumber = "923242336663";; // 👈 apna WhatsApp number likho
-
-        window.open("https://wa.me/" + yourNumber + "?text=" + msg);
-    }
+function order(item){
+  let phone = "923242336663";
+  let message = "Hello Food Mahal, I want to order: " + item;
+  window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message));
+}
 </script>
 
 </body>
