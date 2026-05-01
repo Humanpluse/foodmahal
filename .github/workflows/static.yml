@@ -1,43 +1,182 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Mahal | Pir Mahal</title>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0d0d0d;color:#fff;}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+nav{
+  display:flex;justify-content:space-between;
+  padding:15px 30px;background:#000;
+  position:sticky;top:0;
+}
+nav h1{color:#ff6600;}
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+.hero{
+  height:90vh;
+  background:url('interior1.jpg') center/cover;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  text-align:center;
+}
+.hero h2{font-size:45px;}
+.btn{
+  background:#ff6600;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;margin-top:15px;
+}
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+.section{padding:50px 20px;text-align:center;}
+.section h2{color:#ff6600;margin-bottom:20px;}
+
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#1c1c1c;
+  padding:20px;border-radius:15px;
+  transition:0.3s;
+}
+.card:hover{transform:scale(1.05);}
+.card p{color:#ccc;}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+.gallery img{width:100%;border-radius:10px;}
+
+.menu-img img{
+  width:100%;margin:10px 0;border-radius:10px;
+}
+
+footer{
+  background:#000;padding:20px;text-align:center;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;right:20px;
+  background:#25D366;
+  padding:15px;border-radius:50%;
+}
+iframe{
+  box-shadow:0 0 10px rgba(255,102,0,0.5);
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>🍽 Food Mahal</h1>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Welcome to Food Mahal</h2>
+  <p>Best Taste in Pir Mahal</p>
+  <a class="btn" href="https://wa.me/923242336663">Order Now</a>
+</div>
+
+<!-- DEALS -->
+<div class="section">
+  <h2>🔥 Special Deals</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Deal 1</h3>
+      <p>Zinger + Fries + Drink</p>
+      <b>Rs 500</b>
+    </div>
+    <div class="card">
+      <h3>Deal 2</h3>
+      <p>Burger + Fries + Drink</p>
+      <b>Rs 450</b>
+    </div>
+    <div class="card">
+      <h3>Deal 3</h3>
+      <p>Pizza + Wings + Drink</p>
+      <b>Rs 750</b>
+    </div>
+  </div>
+</div>
+
+<!-- MENU IMAGES -->
+<div class="section">
+  <h2>📋 Full Menu</h2>
+  <div class="menu-img">
+    <img src="menu1.jpg">
+    <img src="menu2.jpg">
+    <img src="menu3.jpg">
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>📸 Our Restaurant</h2>
+  <div class="gallery">
+    <img src="interior1.jpg">
+    <img src="interior2.jpg">
+    <img src="interior3.jpg">
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+  <h2>⭐ Customer Reviews</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Ali Khan</h3>
+      <p>Best pizza in Pir Mahal 🔥</p>
+    </div>
+    <div class="card">
+      <h3>Ahmed Raza</h3>
+      <p>Broast bohat crispy aur tasty 👍</p>
+    </div>
+    <div class="card">
+      <h3>Sana Malik</h3>
+      <p>Family ke liye best place ❤️</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>📍 Contact</h2>
+  <p>Sahib-e-Lolaak Road, Pir Mahal</p>
+  <p>📞 0324-2336663</p>
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="section">
+  <h2>📍 Find Us</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Pir%20Mahal&output=embed"
+    width="100%" height="300">
+  </iframe>
+</div>
+
+<footer>
+  <p>© 2025 Food Mahal</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923242336663">💬</a>
+
+</body>
+</html>
+<div contenteditable="true">
+  <h3>Deal 1</h3>
+  <p>Price: Rs 500</p>
+</div>
