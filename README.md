@@ -369,3 +369,73 @@ let url = "https://wa.me/923242336663?text=" + message;
 document.getElementById("waOrder").href = url;
 }
 </script>
+<script>
+let cart = [];
+let total = 0;
+
+function addToCart(name, price){
+cart.push({name, price});
+total += price;
+updateCart();
+}
+
+function updateCart(){
+let list = document.getElementById("cartItems");
+list.innerHTML = "";
+
+cart.forEach(item => {
+let li = document.createElement("li");
+li.textContent = item.name + " - Rs." + item.price;
+list.appendChild(li);
+});
+
+document.getElementById("total").innerText = total;
+
+let message = "Order from Food Mahal:%0A";
+cart.forEach(item=>{
+message += "- " + item.name + " Rs." + item.price + "%0A";
+});
+message += "%0ATotal: Rs." + total;
+
+let url = "https://wa.me/923242336663?text=" + message;
+document.getElementById("waOrder").href = url;
+}
+</script><div id="cartBox" style="position:fixed;right:15px;bottom:80px;background:#fff;padding:15px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.2);max-width:250px;">
+<h4>Your Order</h4>
+<ul id="cartItems" style="font-size:14px;"></ul>
+<p><strong>Total: Rs. <span id="total">0</span></strong></p>
+<a id="waOrder" href="#" class="btn whatsapp" style="display:block;text-align:center;margin-top:10px;">Order on WhatsApp</a>
+</div><button onclick="addToCart('Classic Pizza Medium', 1000)">Add</button><button onclick="addToCart('Zinger Burger', 370)">Add</button><section class="pricing container">
+<h2>Detailed Menu</h2>
+<ul>
+
+<li>Classic Pizza Small <span>Rs.500</span></li>
+<li>Classic Pizza Medium <span>Rs.1000</span></li>
+<li>Classic Pizza Large <span>Rs.1550</span></li>
+<li>Classic Pizza XL <span>Rs.2000</span></li>
+
+<li>Special Pizza Small <span>Rs.600</span></li>
+<li>Special Pizza XL <span>Rs.2250</span></li>
+
+<li>Malai Boti Half <span>Rs.900</span></li>
+<li>Malai Boti Full <span>Rs.1800</span></li>
+
+<li>Chicken Karahi Half <span>Rs.950</span></li>
+<li>Chicken Karahi Full <span>Rs.1700</span></li>
+
+<li>Mutton Karahi Full <span>Rs.3800</span></li>
+
+<li>Burger Crispy <span>Rs.300</span></li>
+<li>Zinger Burger <span>Rs.370</span></li>
+<li>Broast Full <span>Rs.2099</span></li>
+
+</ul>
+</section>Burgers — https://i.ibb.co/j9zCFsmZ/Screenshot-2026-05-01-12-20-16-971-com-whatsapp.jpg
+Pizza — https://i.ibb.co/wh7TRDwg/Screenshot-2026-05-01-12-20-15-531-com-whatsapp.jpg
+Chicken Broast — https://i.ibb.co/57kv835/Screenshot-2026-05-01-12-20-14-058-com-whatsapp.jpg
+B.B.Q — https://i.ibb.co/3YQD5jxX/Screenshot-2026-05-01-12-20-12-615-com-whatsapp.jpg
+Pizza — https://i.ibb.co/bjBT7NCy/Screenshot-2026-05-01-12-20-08-045-com-whatsapp.jpg
+None — https://i.ibb.co/5h9wBSFP/IMG-20260501-093038.jpg
+Coca-Cola — https://i.ibb.co/1fRR5wVN/IMG-20260501-092927.jpg
+None — https://i.ibb.co/sdJp6tKF/Screenshot-2026-05-01-09-28-01-147-com-google-android-googlequicksearchbox.jpg
+None — https://i.ibb.co/KcZDkn8Q/Screenshot-2026-05-01-09-27-56-702-com-google-android-googlequicksearchbox.jpg
