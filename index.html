@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Mahal</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .menu {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
+<h1>🍽 Food Mahal</h1>
+
+<div class="menu">
+    <h2>Menu</h2>
+
+    <p>Burger - Rs 300 
+    <button onclick="addToCart(300)">Order</button></p>
+
+    <p>Pizza - Rs 800 
+    <button onclick="addToCart(800)">Order</button></p>
+
+    <p>Biryani - Rs 250 
+    <button onclick="addToCart(250)">Order</button></p>
+
+    <p>Karahi - Rs 1200 
+    <button onclick="addToCart(1200)">Order</button></p>
+</div>
+
+<h2>Total: Rs <span id="total">0</span></h2>
+
+<script>
+    let total = 0;
+
+    function addToCart(price) {
+        total += price;
+        document.getElementById("total").innerText = total;
+    }
+</script>
+
+</body>
+</html>
