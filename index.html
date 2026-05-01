@@ -2,55 +2,150 @@
 <html>
 <head>
     <title>Food Mahal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial;
             background: #f4f4f4;
+            margin: 0;
             text-align: center;
         }
+
+        header {
+            background: #e63946;
+            color: white;
+            padding: 15px;
+        }
+
         .menu {
-            background: white;
             padding: 20px;
-            margin: 20px;
+        }
+
+        .item {
+            background: white;
+            margin: 10px;
+            padding: 15px;
             border-radius: 10px;
         }
+
         button {
             padding: 10px;
+            margin-top: 10px;
             background: green;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+        }
+
+        .cart {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 5px;
+        }
+
+        .whatsapp {
+            background: #25D366;
         }
     </style>
 </head>
+
 <body>
 
-<h1>🍽 Food Mahal</h1>
+<header>
+    <h1>🍽 Food Mahal</h1>
+    <p>Delicious Food Online Order</p>
+</header>
 
 <div class="menu">
     <h2>Menu</h2>
 
-    <p>Burger - Rs 300 
-    <button onclick="addToCart(300)">Order</button></p>
+    <div class="item">
+        <h3>Burger - Rs 300</h3>
+        <button onclick="addItem('Burger',300)">Add to Cart</button>
+    </div>
 
-    <p>Pizza - Rs 800 
-    <button onclick="addToCart(800)">Order</button></p>
+    <div class="item">
+        <h3>Pizza - Rs 800</h3>
+        <button onclick="addItem('Pizza',800)">Add to Cart</button>
+    </div>
 
-    <p>Biryani - Rs 250 
-    <button onclick="addToCart(250)">Order</button></p>
+    <div class="item">
+        <h3>Biryani - Rs 250</h3>
+        <button onclick="addItem('Biryani',250)">Add to Cart</button>
+    </div>
 
-    <p>Karahi - Rs 1200 
-    <button onclick="addToCart(1200)">Order</button></p>
+    <div class="item">
+        <h3>Karahi - Rs 1200</h3>
+        <button onclick="addItem('Karahi',1200)">Add to Cart</button>
+    </div>
+
 </div>
 
-<h2>Total: Rs <span id="total">0</span></h2>
+<div class="cart">
+    <h2>Your Order</h2>
+
+    <div id="list"></div>
+
+    <h3>Total: Rs <span id="total">0</span></h3>
+
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <input type="text" id="phone" placeholder="Phone Number"><br>
+    <input type="text" id="address" placeholder="Address"><br>
+
+    <button onclick="placeOrder()">Place Order</button>
+    <br><br>
+    <button class="whatsapp" onclick="sendWhatsApp()">Order on WhatsApp</button>
+</div>
 
 <script>
     let total = 0;
+    let orderList = "";
 
-    function addToCart(price) {
+    function addItem(name, price) {
         total += price;
+        orderList += name + " (Rs " + price + "), ";
         document.getElementById("total").innerText = total;
+        document.getElementById("list").innerText = orderList;
+    }
+
+    function placeOrder() {
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+
+        alert(
+            "Order Placed!\n\nName: " + name +
+            "\nPhone: " + phone +
+            "\nAddress: " + address +
+            "\nItems: " + orderList +
+            "\nTotal: Rs " + total
+        );
+    }
+
+    function sendWhatsApp() {
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+
+        let msg = "New Order%0A"
+            + "Name: " + name + "%0A"
+            + "Phone: " + phone + "%0A"
+            + "Address: " + address + "%0A"
+            + "Items: " + orderList + "%0A"
+            + "Total: Rs " + total;
+
+        let yourNumber = "923001234567"; // 👈 apna WhatsApp number likho
+
+        window.open("https://wa.me/" + yourNumber + "?text=" + msg);
     }
 </script>
 
