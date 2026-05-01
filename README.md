@@ -434,8 +434,4 @@ document.getElementById("waOrder").href = url;
 Pizza — https://i.ibb.co/wh7TRDwg/Screenshot-2026-05-01-12-20-15-531-com-whatsapp.jpg
 Chicken Broast — https://i.ibb.co/57kv835/Screenshot-2026-05-01-12-20-14-058-com-whatsapp.jpg
 B.B.Q — https://i.ibb.co/3YQD5jxX/Screenshot-2026-05-01-12-20-12-615-com-whatsapp.jpg
-Pizza — https://i.ibb.co/bjBT7NCy/Screenshot-2026-05-01-12-20-08-045-com-whatsapp.jpg
-None — https://i.ibb.co/5h9wBSFP/IMG-20260501-093038.jpg
-Coca-Cola — https://i.ibb.co/1fRR5wVN/IMG-20260501-092927.jpg
-None — https://i.ibb.co/sdJp6tKF/Screenshot-2026-05-01-09-28-01-147-com-google-android-googlequicksearchbox.jpg
-None — https://i.ibb.co/KcZDkn8Q/Screenshot-2026-05-01-09-27-56-702-com-google-android-googlequicksearchbox.jpg
+
