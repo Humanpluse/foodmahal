@@ -1,1 +1,447 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Mahal | Pir Mahal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0d0d0d;color:#fff;}
+
+nav{
+  display:flex;justify-content:space-between;
+  padding:15px 30px;background:#000;
+  position:sticky;top:0;
+}
+nav h1{color:#ff6600;}
+
+.hero{
+  height:90vh;
+  background:url('interior1.jpg') center/cover;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  text-align:center;
+}
+.hero h2{font-size:45px;}
+.btn{
+  background:#ff6600;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;margin-top:15px;
+}
+
+.section{padding:50px 20px;text-align:center;}
+.section h2{color:#ff6600;margin-bottom:20px;}
+
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#1c1c1c;
+  padding:20px;border-radius:15px;
+  transition:0.3s;
+}
+.card:hover{transform:scale(1.05);}
+.card p{color:#ccc;}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+.gallery img{width:100%;border-radius:10px;}
+
+.menu-img img{
+  width:100%;margin:10px 0;border-radius:10px;
+}
+
+footer{
+  background:#000;padding:20px;text-align:center;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;right:20px;
+  background:#25D366;
+  padding:15px;border-radius:50%;
+}
+iframe{
+  box-shadow:0 0 10px rgba(255,102,0,0.5);
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>ðŸ½ Food Mahal</h1>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Welcome to Food Mahal</h2>
+  <p>Best Taste in Pir Mahal</p>
+  <a class="btn" href="https://wa.me/923242336663">Order Now</a>
+</div>
+
+<!-- DEALS -->
+<div class="section">
+  <h2>ðŸ”¥ Special Deals</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Deal 1</h3>
+      <p>Zinger + Fries + Drink</p>
+      <b>Rs 500</b>
+    </div>
+    <div class="card">
+      <h3>Deal 2</h3>
+      <p>Burger + Fries + Drink</p>
+      <b>Rs 450</b>
+    </div>
+    <div class="card">
+      <h3>Deal 3</h3>
+      <p>Pizza + Wings + Drink</p>
+      <b>Rs 750</b>
+    </div>
+  </div>
+</div>
+
+<!-- MENU IMAGES -->
+<div class="section">
+  <h2>ðŸ“‹ Full Menu</h2>
+  <div class="menu-img">
+    <img src="menu1.jpg">
+    <img src="menu2.jpg">
+    <img src="menu3.jpg">
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>ðŸ“¸ Our Restaurant</h2>
+  <div class="gallery">
+    <img src="interior1.jpg">
+    <img src="interior2.jpg">
+    <img src="interior3.jpg">
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+  <h2>â­ Customer Reviews</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Ali Khan</h3>
+      <p>Best pizza in Pir Mahal ðŸ”¥</p>
+    </div>
+    <div class="card">
+      <h3>Ahmed Raza</h3>
+      <p>Broast bohat crispy aur tasty ðŸ‘</p>
+    </div>
+    <div class="card">
+      <h3>Sana Malik</h3>
+      <p>Family ke liye best place â¤ï¸</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>ðŸ“ Contact</h2>
+  <p>Sahib-e-Lolaak Road, Pir Mahal</p>
+  <p>ðŸ“ž 0324-2336663</p>
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="section">
+  <h2>ðŸ“ Find Us</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Pir%20Mahal&output=embed"
+    width="100%" height="300">
+  </iframe>
+</div>
+
+<footer>
+  <p>Â© 2025 Food Mahal</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923242336663">ðŸ’¬</a>
+
+</body>
+</html>
+<div contenteditable="true">
+  <h3>Deal 1</h3>
+  <p>Price: Rs 500</p>
+</div>https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swapBurgers — https://i.ibb.co/j9zCFsmZ/Screenshot-2026-05-01-12-20-16-971-com-whatsapp.jpg
+Pizza — https://i.ibb.co/wh7TRDwg/Screenshot-2026-05-01-12-20-15-531-com-whatsapp.jpg
+Chicken Broast — https://i.ibb.co/57kv835/Screenshot-2026-05-01-12-20-14-058-com-whatsapp.jpg
+B.B.Q — https://i.ibb.co/3YQD5jxX/Screenshot-2026-05-01-12-20-12-615-com-whatsapp.jpg
+Pizza — https://i.ibb.co/bjBT7NCy/Screenshot-2026-05-01-12-20-08-045-com-whatsapp.jpg
+None — https://i.ibb.co/5h9wBSFP/IMG-20260501-093038.jpg
+Coca-Cola — https://i.ibb.co/1fRR5wVN/IMG-20260501-092927.jpg
+None — https://i.ibb.co/sdJp6tKF/Screenshot-2026-05-01-09-28-01-147-com-google-android-googlequicksearchbox.jpg
+None — https://i.ibb.co/KcZDkn8Q/Screenshot-2026-05-01-09-27-56-702-com-google-android-googlequicksearchbox.jpgAap ek senior web designer aur front-end engineer ho jo India ke ek chhote, neighbourhood-level
+
+business ke liye ek single-file marketing website bana rahe ho. Tumhara output exactly ek
+
+self-contained index.html file hoga: HTML, embedded CSS, aur minimal embedded JavaScript.
+
+Koi build step nahi, koi external CSS framework nahi CDN ke alawa, koi broken assets nahi.
+
+Neeche diya Business Brief specifics deta hai. Agar koi field blank hai, reasonable choice karo.
+
+Follow-up questions mat pucho. Ek hi response mein poori file generate karo.
+
+ 
+
+IMPORTANT: Website ki SAARI language ENGLISH mein hogi. Hinglish ya Hindi website mein nahi
+
+aayega. Copy, headings, buttons, testimonials, about section — sab kuch English mein likhna hai.
+
+ 
+
+1. YE SITE KISKE LIYE HAI
+
+Owner tech person nahi hai. Tier-3 neighbourhood business. Visitors Google near-me ya WhatsApp
+
+se aayenge, Android phone pe patchy 4G pe site kholenge, 15 seconds mein decide karenge,
+
+aur Call ya WhatsApp tap karke action lenge.
+
+Priority: (1) Local aur legitimate lagni chahiye (2) Ek-tap Call/WhatsApp
+
+(3) Services dignity ke saath dikhao (4) Trust signals
+
+ 
+
+2. NON-NEGOTIABLE RULES
+
+Zero dead buttons. Phone: tel:+923242336663
+
+WhatsApp: https://wa.me/923242336663?text=URL_ENCODED_MESSAGE
+
+Har WhatsApp button ka apna pre-filled message hoga. Saare messages URL-encoded.
+
+Map: iframe https://maps.google.com/maps?q=URL_ENCODED_ADDRESS&output=embed
+
+Mobile <=768px pe sticky bottom bar: [Call] [WhatsApp]
+
+ 
+
+3. DESIGN
+
+Typography: KABHI NAHI Arial/Inter/Roboto. Google Fonts use karo:
+
+Cormorant Garamond+DM Sans / Fraunces+Manrope / Playfair Display+Outfit /
+
+Yatra One+Mukta / DM Serif Display+DM Sans
+
+Colors: 4-6 max. Warm off-white background. Deep charcoal ink. Brand accent.
+
+NO pure white, NO purple gradients, NO SaaS blue.
+
+Motif: Ek choose karo 4-6 baar inline SVG mein: plumber=blueprint grid+hex bullets /
+
+sweet shop=marigold petals / tailor=measuring tape / salon=scalloped dividers /
+
+electrician=hazard stripes+lightning
+
+Layout: Asymmetric. Varied card sizes. 80-120px breathing room. Ek layout-breaking moment.
+
+ 
+
+4. SECTIONS (is order mein)
+
+1. Sticky header: logo, 3-5 nav links, Call+WhatsApp hamesha visible, hamburger mobile pe
+
+2. Hero: 12-18 word value prop, proof line, WhatsApp CTA filled + Call outlined, hero visual
+
+3. Trust strip: 3-4 numeric proof points
+
+4. Services/Products: 4-8 cards with icon, name, description, price, per-card WhatsApp CTA
+
+5. About: owner initials avatar, 2-3 para owner voice, relative+year ka zikr, 4-5 differentiators
+
+6. Gallery: 6-9 photos varied grid loading=lazy
+
+7. Testimonials: 3 reviews informal+specific, name, neighbourhood, 5-star SVGs
+
+8. Pricing: clean transparent list, NOT 3-tier highlighted
+
+9. Contact: embedded map, hours two-column, saare contact methods
+
+10. Footer: name+tagline, quick links, social sirf agar provided, big WhatsApp CTA, dynamic year
+
+ 
+
+5. IMAGES
+
+Use: https://images.unsplash.com/photo-{ID}?w=800&auto=format&fit=crop
+
+KABHI use mat karo placeholder.com.
+
+Agar image URLs brief mein diye hain, unhe directly <img src=> tags mein use karo.
+
+Owner photo nahi hai toh initials circle banao brand-color background pe.
+
+ 
+
+6. COPY RULES
+
+Specific, generic nahi. About mein owner ki awaaz — relative, saal, memory. Testimonials informal.
+
+ 
+
+7. KABHI MAT KARO
+
+Lorem ipsum / Coming soon / fake awards / newsletter forms / auto-play /
+
+3-tier pricing / sab centered / glassmorphism / purple gradients / stock office photos
+
+ 
+
+8. TECHNICAL
+
+Single index.html. Google Fonts via link. CSS ek style tag mein. CSS variables upar.
+
+Mobile-first (1080px, 820px, 520px). Semantic HTML. Meta tags + favicon. Smooth scroll.
+
+SIRF HTML OUTPUT KARO. Koi markdown fences nahi. IN ALL THE WEBSITE THERE SHOULD BE ONE LINE COMPULSORY IN SMALL LETTER. “BUILT WITH ❤️ BY 21.CODERS”
+
+Start karo <!DOCTYPE html> se, end karo </html> pe.
+
+ 
+
+BUSINESS BRIEF ===
+
+BUSINESS_NAME: Food Mahal
+
+TAGLINE: Fresh taste, fast delivery, BBQ & fast food hub
+
+NICHE: Fast Food Restaurant (BBQ, Pizza, Burgers)
+
+LOCATION: Pir Mahal, Punjab, Pakistan
+
+YEARS_IN_BUSINESS: 2 years
+
+OWNER_NAME: FILL IN
+
+PHONE: 923242336663
+
+WHATSAPP_NUMBER: 923242336663
+
+EMAIL:
+
+FULL_ADDRESS: Pir Mahal, Punjab, Pakistan
+
+HOURS: 11:00 AM – 10:00 PM (Temporary lockdown timing)
+
+
+
+SERVICES_OR_PRODUCTS:
+
+
+
+Zinger Burger — Rs. 350
+
+
+
+Chicken Burger — Rs. 250
+
+
+
+Beef Burger — Rs. 300
+
+
+
+Chicken Broast (Full) — Rs. 1200
+
+
+
+Chicken Broast (Half) — Rs. 650
+
+
+
+Chicken Tikka — Rs. 400
+
+
+
+Seekh Kabab — Rs. 300
+
+
+
+Malai Boti — Rs. 800
+
+
+
+Chicken Pizza (Small) — Rs. 500
+
+
+
+Chicken Pizza (Medium) — Rs. 900
+
+
+
+Chicken Pizza (Large) — Rs. 1400
+
+
+
+Special Pizza — Rs. 1500
+
+
+
+BBQ Platter — Rs. 1800
+
+
+
+Fries — Rs. 200
+
+
+
+Soft Drinks (Coca-Cola, etc.) — Rs. 100-200
+
+
+
+
+
+DISTINCTIVE_FACT: Fast food + BBQ + pizza sab ek hi jagah, 20-25 min delivery available
+
+COLOR_VIBE: Warm, vibrant, desi street-food style
+
+
+
+INSTAGRAM_HANDLE:
+
+
+
+HERO_IMAGE_URL:
+
+
+
+OTHER_IMAGE_URLS:
+
+https://i.ibb.co/j9zCFsmZ/Screenshot-2026-05-01-12-20-16-971-com-whatsapp.jpg
+
+https://i.ibb.co/wh7TRDwg/Screenshot-2026-05-01-12-20-15-531-com-whatsapp.jpg
+
+https://i.ibb.co/57kv835/Screenshot-2026-05-01-12-20-14-058-com-whatsapp.jpg
+
+https://i.ibb.co/3YQD5jxX/Screenshot-2026-05-01-12-20-12-615-com-whatsapp.jpg
+
+https://i.ibb.co/bjBT7NCy/Screenshot-2026-05-01-12-20-08-045-com-whatsapp.jpg
+
+https://i.ibb.co/5h9wBSFP/IMG-20260501-093038.jpg
+
+https://i.ibb.co/1fRR5wVN/IMG-20260501-092927.jpg
+
+https://i.ibb.co/sdJp6tKF/Screenshot-2026-05-01-09-28-01-147-com-google-android-googlequicksearchbox.jpg
+
+https://i.ibb.co/KcZDkn8Q/Screenshot-2026-05-01-09-27-56-702-com-google-android-googlequicksearchbox.jpg
