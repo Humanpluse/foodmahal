@@ -165,3 +165,207 @@ flex:1;text-align:center;padding:15px;color:#fff;text-decoration:none;
 document.getElementById("year").textContent = new Date().getFullYear();
 </script></body>
 </html>
+<section id="services" class="services container">
+<h2>Our Full Menu</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Classic Crust Pizza</h3>
+<p>Chicken Tikka, Fajita, Supreme</p>
+<strong>Small Rs.500 | Medium Rs.1000 | Large Rs.1550 | XL Rs.2000</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Classic%20Crust%20Pizza" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Special Pizzas</h3>
+<p>Food Mahal Special, Crown Crust, Malai Boti & more</p>
+<strong>Small Rs.600 | Medium Rs.1150 | Large Rs.1800 | XL Rs.2250</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Special%20Pizza" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Super Stuffer Pizza</h3>
+<p>Stuffed crust & square pizza options</p>
+<strong>Medium Rs.1200 | Large Rs.1800</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Super%20Stuffer%20Pizza" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>BBQ Boti & Kabab</h3>
+<p>Malai Boti, Kastori, Irani, Rashmi & more</p>
+<strong>Rs.750 – Rs.2000</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20BBQ%20items" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Grill Fish</h3>
+<p>FM Special & Kala Raho Fish</p>
+<strong>Rs.800 – Rs.1600</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Grill%20Fish" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Karahi</h3>
+<p>Mutton, Beef, Chicken (Achari, White, Peshawri)</p>
+<strong>Rs.950 – Rs.3800</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Karahi" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Handi & Rice</h3>
+<p>Handi, Fried Rice, Afghani Pulao</p>
+<strong>Rs.680 – Rs.1500</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Handi%20or%20Rice" class="btn whatsapp">Order</a>
+</div>
+
+<div class="card">
+<h3>Fast Food</h3>
+<p>Burgers, Wraps, Rolls & Broast</p>
+<strong>Rs.300 – Rs.2099</strong><br>
+<a href="https://wa.me/923242336663?text=I%20want%20Fast%20Food" class="btn whatsapp">Order</a>
+</div>
+
+</div>
+</section>
+<section class="pricing container">
+<h2>Detailed Menu</h2>
+<ul>
+
+<li>Classic Pizza Small <span>Rs.500</span></li>
+<li>Classic Pizza Medium <span>Rs.1000</span></li>
+<li>Classic Pizza Large <span>Rs.1550</span></li>
+<li>Classic Pizza XL <span>Rs.2000</span></li>
+
+<li>Special Pizza Small <span>Rs.600</span></li>
+<li>Special Pizza XL <span>Rs.2250</span></li>
+
+<li>Malai Boti Half <span>Rs.900</span></li>
+<li>Malai Boti Full <span>Rs.1800</span></li>
+
+<li>Chicken Karahi Half <span>Rs.950</span></li>
+<li>Chicken Karahi Full <span>Rs.1700</span></li>
+
+<li>Mutton Karahi Full <span>Rs.3800</span></li>
+
+<li>Burger Crispy <span>Rs.300</span></li>
+<li>Zinger Burger <span>Rs.370</span></li>
+<li>Broast Full <span>Rs.2099</span></li>
+
+</ul>
+</section><section class="pricing container">
+<h2>Detailed Menu</h2>
+<ul>
+
+<li>Classic Pizza Small <span>Rs.500</span></li>
+<li>Classic Pizza Medium <span>Rs.1000</span></li>
+<li>Classic Pizza Large <span>Rs.1550</span></li>
+<li>Classic Pizza XL <span>Rs.2000</span></li>
+
+<li>Special Pizza Small <span>Rs.600</span></li>
+<li>Special Pizza XL <span>Rs.2250</span></li>
+
+<li>Malai Boti Half <span>Rs.900</span></li>
+<li>Malai Boti Full <span>Rs.1800</span></li>
+
+<li>Chicken Karahi Half <span>Rs.950</span></li>
+<li>Chicken Karahi Full <span>Rs.1700</span></li>
+
+<li>Mutton Karahi Full <span>Rs.3800</span></li>
+
+<li>Burger Crispy <span>Rs.300</span></li>
+<li>Zinger Burger <span>Rs.370</span></li>
+<li>Broast Full <span>Rs.2099</span></li>
+
+</ul>
+</section><section class="pricing container">
+<h2>Detailed Menu</h2>
+<ul>
+
+<li>Classic Pizza Small <span>Rs.500</span></li>
+<li>Classic Pizza Medium <span>Rs.1000</span></li>
+<li>Classic Pizza Large <span>Rs.1550</span></li>
+<li>Classic Pizza XL <span>Rs.2000</span></li>
+
+<li>Special Pizza Small <span>Rs.600</span></li>
+<li>Special Pizza XL <span>Rs.2250</span></li>
+
+<li>Malai Boti Half <span>Rs.900</span></li>
+<li>Malai Boti Full <span>Rs.1800</span></li>
+
+<li>Chicken Karahi Half <span>Rs.950</span></li>
+<li>Chicken Karahi Full <span>Rs.1700</span></li>
+
+<li>Mutton Karahi Full <span>Rs.3800</span></li>
+
+<li>Burger Crispy <span>Rs.300</span></li>
+<li>Zinger Burger <span>Rs.370</span></li>
+<li>Broast Full <span>Rs.2099</span></li>
+
+</ul>
+</section><section class="pricing container">
+<h2>Detailed Menu</h2>
+<ul>
+
+<li>Classic Pizza Small <span>Rs.500</span></li>
+<li>Classic Pizza Medium <span>Rs.1000</span></li>
+<li>Classic Pizza Large <span>Rs.1550</span></li>
+<li>Classic Pizza XL <span>Rs.2000</span></li>
+
+<li>Special Pizza Small <span>Rs.600</span></li>
+<li>Special Pizza XL <span>Rs.2250</span></li>
+
+<li>Malai Boti Half <span>Rs.900</span></li>
+<li>Malai Boti Full <span>Rs.1800</span></li>
+
+<li>Chicken Karahi Half <span>Rs.950</span></li>
+<li>Chicken Karahi Full <span>Rs.1700</span></li>
+
+<li>Mutton Karahi Full <span>Rs.3800</span></li>
+
+<li>Burger Crispy <span>Rs.300</span></li>
+<li>Zinger Burger <span>Rs.370</span></li>
+<li>Broast Full <span>Rs.2099</span></li>
+
+</ul>
+</section>
+<button onclick="addToCart('Zinger Burger', 370)">Add</button>
+<button onclick="addToCart('Classic Pizza Medium', 1000)">Add</button>
+<div id="cartBox" style="position:fixed;right:15px;bottom:80px;background:#fff;padding:15px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.2);max-width:250px;">
+<h4>Your Order</h4>
+<ul id="cartItems" style="font-size:14px;"></ul>
+<p><strong>Total: Rs. <span id="total">0</span></strong></p>
+<a id="waOrder" href="#" class="btn whatsapp" style="display:block;text-align:center;margin-top:10px;">Order on WhatsApp</a>
+</div>
+<script>
+let cart = [];
+let total = 0;
+
+function addToCart(name, price){
+cart.push({name, price});
+total += price;
+updateCart();
+}
+
+function updateCart(){
+let list = document.getElementById("cartItems");
+list.innerHTML = "";
+
+cart.forEach(item => {
+let li = document.createElement("li");
+li.textContent = item.name + " - Rs." + item.price;
+list.appendChild(li);
+});
+
+document.getElementById("total").innerText = total;
+
+let message = "Order from Food Mahal:%0A";
+cart.forEach(item=>{
+message += "- " + item.name + " Rs." + item.price + "%0A";
+});
+message += "%0ATotal: Rs." + total;
+
+let url = "https://wa.me/923242336663?text=" + message;
+document.getElementById("waOrder").href = url;
+}
+</script>
