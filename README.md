@@ -1,161 +1,66 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Food Mahal - Pir Mahal</title>
-
 <style>
-body{
-  margin:0;
-  font-family:Arial;
-  background:#fff8f0;
-}
-header{
-  background:#c0192a;
-  color:white;
-  padding:15px;
-  text-align:center;
-}
-.hero{
-  padding:40px;
-  text-align:center;
-  background:#1a0a00;
-  color:white;
-}
-.hero h1{font-size:40px}
-.btn{
-  background:#25D366;
-  padding:10px 20px;
-  color:white;
-  text-decoration:none;
-  border-radius:20px;
-  display:inline-block;
-  margin-top:10px;
-}
-.section{
-  padding:30px;
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
-}
-.card{
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-.card img{
-  width:100%;
-  border-radius:10px;
-}
-.price{
-  color:#c0192a;
-  font-weight:bold;
-}
-footer{
-  background:black;
-  color:white;
-  text-align:center;
-  padding:10px;
-}
+body{margin:0;font-family:Arial;background:#0f172a;color:#fff}
+header{background:#111827;padding:20px;text-align:center}
+header h1{margin:0;color:#f59e0b}
+nav{display:flex;justify-content:center;gap:20px;margin-top:10px}
+nav a{color:#fff;text-decoration:none}
+.hero{padding:40px;text-align:center;background:#1f2937}
+.btn{background:#f59e0b;padding:12px 20px;border:none;color:#000;font-weight:bold;border-radius:5px;cursor:pointer}
+.section{padding:30px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#1f2937;padding:20px;border-radius:10px}
+.card h3{color:#f59e0b}
+footer{background:#111827;padding:20px;text-align:center;margin-top:20px}
 </style>
 </head>
-
 <body>
-
 <header>
-  <h2>🍕 Food Mahal</h2>
-</header>
-
-<div class="hero">
-  <h1>Best Food in Pir Mahal</h1>
-  <p>Pizza | Broast | BBQ | Fast Food</p>
-  <a class="btn" href="https://wa.me/923242336663">Order on WhatsApp</a>
+<h1>Food Mahal</h1>
+<p>Pir Mahal - Fast Food | BBQ | Karahi</p>
+<nav>
+<a href="#menu">Menu</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section class="hero">
+<h2>Delicious Food Delivered in 20-25 Minutes</h2>
+<p>Free Delivery in Pir Mahal City | Village Extra Charges</p>
+<button class="btn" onclick="orderNow()">Order Now</button>
+</section><section id="menu" class="section">
+<h2>Our Menu</h2>
+<div class="menu-grid">
+<div class="card">
+<h3>Pizza</h3>
+<p>Small: 500 | Medium: 1000 | Large: 1550 | XL: 2000</p>
 </div>
-
-<!-- MENU -->
-<div class="section">
-  <h2>Menu</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1601924638867-3ec6c2b53c5f">
-      <h3>Pizza</h3>
-      <p class="price">Rs 750+</p>
-      <a class="btn" href="https://wa.me/923242336663?text=Pizza Order">Order</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-      <h3>Chicken Broast</h3>
-      <p class="price">Rs 599</p>
-      <a class="btn" href="https://wa.me/923242336663?text=Broast Order">Order</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-      <h3>Zinger Burger</h3>
-      <p class="price">Rs 300</p>
-      <a class="btn" href="https://wa.me/923242336663?text=Burger Order">Order</a>
-    </div>
-
-  </div>
+<div class="card">
+<h3>BBQ</h3>
+<p>Malai Boti, Chicken Tikka, Kabab & more</p>
 </div>
-
-<!-- DEALS -->
-<div class="section">
-  <h2>Deals</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Deal 1</h3>
-      <p>Zinger + Fries + Drink</p>
-      <p class="price">Rs 500</p>
-    </div>
-
-    <div class="card">
-      <h3>Deal 5</h3>
-      <p>Large Pizza + Wings + Drink</p>
-      <p class="price">Rs 2100</p>
-    </div>
-  </div>
+<div class="card">
+<h3>Karahi</h3>
+<p>Chicken, Beef, Mutton Karahi Available</p>
 </div>
-
-<!-- GALLERY -->
-<div class="section">
-  <h2>Gallery</h2>
-  <div class="grid">
-    <img src="https://images.unsplash.com/photo-1548365328-8b849e54a8c0">
-    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
-  </div>
+<div class="card">
+<h3>Burgers & Wraps</h3>
+<p>Zinger, Tower, Chicken Wraps</p>
 </div>
-
-<!-- PAYMENT -->
-<div class="section">
-  <h2>Online Payment</h2>
-
-  <p>Pay via JazzCash / Easypaisa</p>
-
-  <a class="btn" href="https://payment-link.com">Pay Now</a>
+<div class="card">
+<h3>Rice & Handi</h3>
+<p>Biryani, Pulao, Chicken Handi</p>
 </div>
-
-<!-- MAP -->
-<div class="section">
-  <h2>Location</h2>
-
-  <iframe width="100%" height="250"
-  src="https://maps.google.com/maps?q=Pir%20Mahal&t=&z=13&ie=UTF8&iwloc=&output=embed">
-  </iframe>
+<div class="card">
+<h3>Broast</h3>
+<p>Full, Half & Family Deals Available</p>
 </div>
-
-<footer>
-  📞 0324-2336663 | Food Mahal Pir Mahal
-</footer>
-
-</body>
-</html>
+</div>
+</section><section id="order" class="section">
+<h2>Place Your Order</h2>
+<input type="text" id="name" placeholder="Your Name" style="padding:10px;width:100%;margin:10px 0">
+<input type="text" id="phone" placeholder="Phone Number" style="padding:10px;width:100%;margin:10px 0">
+<textarea id="order" placeholder="Your Order Details" style="padding:10px;width:100%;margin:10px 0"></textarea
